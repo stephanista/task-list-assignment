@@ -11,9 +11,9 @@ tasks = [
    console.log(newtaskname);
    var newtaskmaster = document.querySelector('input[name="taskymaster"]:checked').value;
    console.log(newtaskmaster);
-   var newtasklevel = document.userTaskAdd.taskLevel.value;
+   var newtasklevel = document.userTaskAdd.diff.value;
    console.log(newtasklevel);
-   newtaskful = [newtaskname, newtaskmaster, newtasklevel]
+   newtaskfull = [newtaskname, newtaskmaster, newtasklevel]
    tasks.push(newtaskfull);
    console.log("Oh, you added.. '" + newtaskfull + "'. Awesome!")
  }
