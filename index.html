@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>ToDo App</title>
     <script type="text/javascript" src="scripts/scripty1.js"></script>
   </head>
   <body>
@@ -12,26 +12,31 @@
           <label>What is the name of the task?
             <input type="text" name="taskname" id="taskName">
           </label><br>
-          <label id="taskMaster">Who must perform the task?
+          <label>Who must perform the task?
             <input type="radio" name="taskymaster" value="Stephanista">
             Steph
+          </label>
+          <label>
             <input type="radio" name="taskymaster" value="Nylet">
             Nylet
+          </label>
+          <label>
             <input type="radio" name="taskymaster" value="Yana">
             Yana
           </label><br>
-        </label id="taskLevel">How difficult is the task?
+          <label>How difficult is the task?
             <select name="diff">
               <option value="Easy">Easy Peasy</option>
               <option value="Medium">Meh</option>
               <option value="Hard">Yikes</option>
               <option value="Impossible">Good frickin' luck</option>
             </select>
-        </label><br>
+          </label><br>
         <input type="submit" name="submit" value="Add the task">
         <input type="reset" name="clear" value="Clear">
-      </form>
-    </fieldset>
+      </fieldset>
+    </form>
+
     <p>Task List:</p>
     <ul id="tasks">
     </ul>
