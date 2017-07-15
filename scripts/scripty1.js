@@ -1,7 +1,7 @@
  console.log("heya");
 
 tasks = [];
-var taskList = "";
+
 
 
  function addTask() {
@@ -11,7 +11,10 @@ var taskList = "";
    var newtasklevel = document.userTaskAdd.diff.value;
    newtaskfull = [newtaskname, newtaskmaster, newtasklevel]
    tasks.push(newtaskfull);
-   taskList += "<li>" + tasks + "</li>";
+   var taskList = "";
+   for (var i = 0, task; task = tasks[i]; i++) {
+     taskList += "<li>" + task + "</li>";
+    }
    document.getElementById("tasks").innerHTML = taskList;
    console.log("Oh, you added.. '" + newtaskfull + "'. Awesome!")
 
