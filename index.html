@@ -6,25 +6,25 @@
     <script type="text/javascript" src="scripts/scripty1.js"></script>
   </head>
   <body>
-    <form>
+    <form name="userTaskAdd" onsubmit="addTask()">
       <fieldset>
         <legend>Add A Task</legend>
           <label>What is the name of the task?
-            <input type="text" name="taskname">
+            <input type="text" name="taskname" id="taskName">
           </label>
-          <label>Who must perform the task?
-            <input type="radio" name="taskmaster" value="Stephanista">
+          <label id="taskMaster">Who must perform the task?
+            <input type="radio" name="taskymaster" value="Stephanista">
             Steph
-          </label>
-          <label>
-            <input type="radio" name="taskmaster" value="Nylet">
+          <!-- </label> -->
+          <!-- <label> -->
+            <input type="radio" name="taskymaster" value="Nylet">
             Nylet
-          </label>
-          <label>
-            <input type="radio" name="taskmaster" value="Yana">
+          <!-- </label> -->
+          <!-- <label> -->
+            <input type="radio" name="taskymaster" value="Yana">
             Yana
           </label>
-        </label>How difficult is the task?
+        </label id="taskLevel">How difficult is the task?
             <select name="diff">
               <option value="easy">Easy Peasy</option>
               <option value="med">Meh</option>
